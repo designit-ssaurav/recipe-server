@@ -1,0 +1,48 @@
+{
+  "recipe": [
+    {
+      "name": "Recipe 001",
+      "duration": "10:11",
+      "createdBy": "Admin",
+      "currentVersion": "V003",
+      "steps": [
+        {
+          "id": "S1",
+          "inletName": "test-port-1",
+          "inletId": 1,
+          "duration": "00:30"
+        }
+      ],
+      "createdAt": "2022-02-23T14:28:57.296Z",
+      "lastEditedOn": "2022-02-23T15:30:06.145Z",
+      "updatedOn": "2022-02-23T15:30:06.145Z",
+      "status": "Assigned to timeline",
+      "id": "971bec37-151d-4e6c-bf6f-626561e2c290"
+    },
+    {
+      "name": "Recipe 002",
+      "duration": "10:11",
+      "createdBy": "Admin",
+      "currentVersion": "V3",
+      "steps": [
+        {
+          "inletName": "test-port-1",
+          "inletId": 1,
+          "duration": "00:30",
+          "id": "0a6cdfd0-e829-44f8-9a5f-0a229be3c3b5"
+        },
+        {
+          "inletName": "port1",
+          "inletId": 2,
+          "duration": "00:40",
+          "id": "ace075f1-c2d1-495c-9884-966b3f5291a6"
+        }
+      ],
+      "createdAt": "2022-02-23T15:46:57.540Z",
+      "lastEditedOn": "2022-02-23T15:46:57.540Z",
+      "updatedOn": "2022-02-23T15:46:57.540Z",
+      "status": "Assigned to timeline",
+      "id": "378d51de-57dc-4774-b3a5-958aa53d46d3"
+    }
+  ]
+}
