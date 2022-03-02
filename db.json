@@ -21,9 +21,9 @@
     },
     {
       "name": "Recipe 002",
-      "duration": "10:11",
+      "duration": "01:10",
       "createdBy": "Admin",
-      "currentVersion": "V3",
+      "currentVersion": "V2",
       "steps": [
         {
           "inletName": "test-port-1",
@@ -39,233 +39,442 @@
         }
       ],
       "createdAt": "2022-02-23T15:46:57.540Z",
-      "lastEditedOn": "2022-02-23T15:46:57.540Z",
-      "updatedOn": "2022-02-23T15:46:57.540Z",
+      "lastEditedOn": "2022-03-02T04:40:23.588Z",
+      "updatedOn": "2022-03-02T04:40:23.588Z",
       "status": "Assigned to timeline",
       "id": "378d51de-57dc-4774-b3a5-958aa53d46d3"
+    },
+    {
+      "name": "Recipe003",
+      "duration": "11:20",
+      "createBy": "Admin",
+      "currentVersion": "V1",
+      "steps": [
+        {
+          "inletName": "port10",
+          "inletId": 1,
+          "duration": "00:45",
+          "id": "3a6c73a7-fc19-416a-a47c-cc7622c30fb6"
+        },
+        {
+          "inletName": "port8",
+          "inletId": 2,
+          "duration": "00:55",
+          "id": "9ec2c6fb-e31b-4a4a-a2c4-a26facf37016"
+        }
+      ],
+      "createdOn": "2022-03-02T04:33:03.440Z",
+      "lastEditedOn": "2022-03-02T04:33:03.440Z",
+      "updatedOn": "2022-03-02T04:33:03.440Z",
+      "status": "Assigned to timeline",
+      "id": "9986ae3d-e658-489d-9bbc-500fca46baf3"
+    },
+    {
+      "name": "Recipe004",
+      "duration": "01:00",
+      "createBy": "Admin",
+      "currentVersion": "V1",
+      "steps": [
+        {
+          "inletName": "port10",
+          "inletId": 1,
+          "duration": "00:45",
+          "id": "a793bbea-541c-4664-9344-73463e4eb489"
+        },
+        {
+          "inletName": "port8",
+          "inletId": 2,
+          "duration": "00:15",
+          "id": "20750acf-ddc0-4307-9e42-b66afcd82385"
+        }
+      ],
+      "createdOn": "2022-03-02T05:05:19.706Z",
+      "lastEditedOn": "2022-03-02T05:05:19.706Z",
+      "updatedOn": "2022-03-02T05:05:19.706Z",
+      "status": "Assigned to timeline",
+      "id": "d97073ec-5558-42f9-8015-e11784b6041c"
     }
   ],
   "inlets": [
     {
       "type": "PORT",
-      "name": "port1",
+      "name": "1",
       "id": 1,
-      "available": false
+      "bankId": 1,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 1",
+      "available": true
     },
     {
       "type": "PORT",
-      "name": "port2",
+      "name": "2",
       "id": 2,
+      "bankId": 1,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 2",
       "available": true
     },
     {
       "type": "PORT",
-      "name": "port3",
+      "name": "3",
       "id": 3,
+      "bankId": 1,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 3",
       "available": true
     },
     {
       "type": "PORT",
-      "name": "port4",
+      "name": "4",
       "id": 4,
+      "bankId": 1,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 4",
       "available": true
     },
     {
       "type": "PORT",
-      "name": "port5",
+      "name": "5",
       "id": 5,
+      "bankId": 1,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 5",
       "available": true
     },
     {
       "type": "PORT",
-      "name": "port6",
+      "name": "6",
       "id": 6,
+      "bankId": 1,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 6",
       "available": true
     },
     {
       "type": "PORT",
-      "name": "port7",
+      "name": "7",
       "id": 7,
+      "bankId": 1,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 7",
       "available": true
     },
     {
       "type": "PORT",
-      "name": "port8",
+      "name": "8",
       "id": 8,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port9",
-      "id": 9,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port10",
-      "id": 10,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port11",
-      "id": 11,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port12",
-      "id": 12,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port13",
-      "id": 13,
-      "available": false
-    },
-    {
-      "type": "PORT",
-      "name": "port14",
-      "id": 14,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port15",
-      "id": 15,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port16",
-      "id": 16,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port17",
-      "id": 17,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port18",
-      "id": 18,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port19",
-      "id": 19,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port20",
-      "id": 20,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port21",
-      "id": 21,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port22",
-      "id": 22,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port23",
-      "id": 23,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port24",
-      "id": 24,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port25",
-      "id": 25,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port26",
-      "id": 26,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port27",
-      "id": 27,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port28",
-      "id": 28,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port29",
-      "id": 29,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port30",
-      "id": 30,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port31",
-      "id": 31,
-      "available": true
-    },
-    {
-      "type": "PORT",
-      "name": "port32",
-      "id": 32,
+      "bankId": 1,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 8",
       "available": true
     },
     {
       "type": "CLEAN",
-      "name": "CLEAN 1",
-      "id": 1001,
+      "name": "Clean 1",
+      "id": -1,
+      "bankId": 1,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Clean 1-8",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "1",
+      "id": 1,
+      "bankId": 2,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 9",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "2",
+      "id": 2,
+      "bankId": 2,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 10",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "3",
+      "id": 3,
+      "bankId": 2,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 11",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "4",
+      "id": 4,
+      "bankId": 1,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 12",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "5",
+      "id": 5,
+      "bankId": 2,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 13",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "6",
+      "id": 6,
+      "bankId": 2,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 14",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "7",
+      "id": 7,
+      "bankId": 2,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 15",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "8",
+      "id": 8,
+      "bankId": 2,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 16",
       "available": true
     },
     {
       "type": "CLEAN",
-      "name": "CLEAN 2",
-      "id": 1002,
+      "name": "Clean 2",
+      "id": -1,
+      "bankId": 2,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Clean 9-16",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "1",
+      "id": 1,
+      "bankId": 3,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 17",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "2",
+      "id": 2,
+      "bankId": 3,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 18",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "3",
+      "id": 3,
+      "bankId": 3,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 19",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "4",
+      "id": 4,
+      "bankId": 3,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 20",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "5",
+      "id": 5,
+      "bankId": 3,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 21",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "6",
+      "id": 6,
+      "bankId": 3,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 22",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "7",
+      "id": 7,
+      "bankId": 3,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 23",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "8",
+      "id": 8,
+      "bankId": 3,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 24",
       "available": true
     },
     {
       "type": "CLEAN",
-      "name": "CLEAN 3",
-      "id": 1003,
+      "name": "Clean 3",
+      "id": -1,
+      "bankId": 3,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Clean 17-24",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "1",
+      "id": 1,
+      "bankId": 4,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 25",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "2",
+      "id": 2,
+      "bankId": 4,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 26",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "3",
+      "id": 3,
+      "bankId": 4,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 27",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "4",
+      "id": 4,
+      "bankId": 4,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 28",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "5",
+      "id": 5,
+      "bankId": 4,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 29",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "6",
+      "id": 6,
+      "bankId": 4,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 30",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "7",
+      "id": 7,
+      "bankId": 4,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 31",
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "8",
+      "id": 8,
+      "bankId": 4,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Port 32",
       "available": true
     },
     {
       "type": "CLEAN",
-      "name": "CLEAN 4",
-      "id": 1004,
+      "name": "Clean 4",
+      "id": -1,
+      "bankId": 4,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Clean 25-32",
       "available": true
     },
     {
       "type": "REFERENCE",
       "name": "Reference",
-      "id": 2000
+      "id": -2,
+      "bankId": 4,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Reference",
+      "available": true
+    },
+    {
+      "type": "STANDBY",
+      "name": "StandBy",
+      "id": 0,
+      "bankId": 0,
+      "zeroPort": false,
+      "isActive": true,
+      "label": "Stand By",
+      "available": true
     }
   ]
 }

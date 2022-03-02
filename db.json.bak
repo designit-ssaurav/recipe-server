@@ -1,0 +1,321 @@
+{
+  "recipe": [
+    {
+      "name": "Recipe 001",
+      "duration": "10:11",
+      "createdBy": "Admin",
+      "currentVersion": "V003",
+      "steps": [
+        {
+          "id": "S1",
+          "inletName": "test-port-1",
+          "inletId": 1,
+          "duration": "00:30"
+        }
+      ],
+      "createdAt": "2022-02-23T14:28:57.296Z",
+      "lastEditedOn": "2022-02-23T15:30:06.145Z",
+      "updatedOn": "2022-02-23T15:30:06.145Z",
+      "status": "Assigned to timeline",
+      "id": "971bec37-151d-4e6c-bf6f-626561e2c290"
+    },
+    {
+      "name": "Recipe 002",
+      "duration": "01:10",
+      "createdBy": "Admin",
+      "currentVersion": "V2",
+      "steps": [
+        {
+          "inletName": "test-port-1",
+          "inletId": 1,
+          "duration": "00:30",
+          "id": "0a6cdfd0-e829-44f8-9a5f-0a229be3c3b5"
+        },
+        {
+          "inletName": "port1",
+          "inletId": 2,
+          "duration": "00:40",
+          "id": "ace075f1-c2d1-495c-9884-966b3f5291a6"
+        }
+      ],
+      "createdAt": "2022-02-23T15:46:57.540Z",
+      "lastEditedOn": "2022-03-02T04:40:23.588Z",
+      "updatedOn": "2022-03-02T04:40:23.588Z",
+      "status": "Assigned to timeline",
+      "id": "378d51de-57dc-4774-b3a5-958aa53d46d3"
+    },
+    {
+      "name": "Recipe003",
+      "duration": "11:20",
+      "createBy": "Admin",
+      "currentVersion": "V1",
+      "steps": [
+        {
+          "inletName": "port10",
+          "inletId": 1,
+          "duration": "00:45",
+          "id": "3a6c73a7-fc19-416a-a47c-cc7622c30fb6"
+        },
+        {
+          "inletName": "port8",
+          "inletId": 2,
+          "duration": "00:55",
+          "id": "9ec2c6fb-e31b-4a4a-a2c4-a26facf37016"
+        }
+      ],
+      "createdOn": "2022-03-02T04:33:03.440Z",
+      "lastEditedOn": "2022-03-02T04:33:03.440Z",
+      "updatedOn": "2022-03-02T04:33:03.440Z",
+      "status": "Assigned to timeline",
+      "id": "9986ae3d-e658-489d-9bbc-500fca46baf3"
+    },
+    {
+      "name": "Recipe004",
+      "duration": "01:00",
+      "createBy": "Admin",
+      "currentVersion": "V1",
+      "steps": [
+        {
+          "inletName": "port10",
+          "inletId": 1,
+          "duration": "00:45",
+          "id": "a793bbea-541c-4664-9344-73463e4eb489"
+        },
+        {
+          "inletName": "port8",
+          "inletId": 2,
+          "duration": "00:15",
+          "id": "20750acf-ddc0-4307-9e42-b66afcd82385"
+        }
+      ],
+      "createdOn": "2022-03-02T05:05:19.706Z",
+      "lastEditedOn": "2022-03-02T05:05:19.706Z",
+      "updatedOn": "2022-03-02T05:05:19.706Z",
+      "status": "Assigned to timeline",
+      "id": "d97073ec-5558-42f9-8015-e11784b6041c"
+    }
+  ],
+  "inlets": [
+    {
+      "type": "PORT",
+      "name": "port1",
+      "id": 1,
+      "available": false
+    },
+    {
+      "type": "PORT",
+      "name": "port2",
+      "id": 2,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port3",
+      "id": 3,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port4",
+      "id": 4,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port5",
+      "id": 5,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port6",
+      "id": 6,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port7",
+      "id": 7,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port8",
+      "id": 8,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port9",
+      "id": 9,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port10",
+      "id": 10,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port11",
+      "id": 11,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port12",
+      "id": 12,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port13",
+      "id": 13,
+      "available": false
+    },
+    {
+      "type": "PORT",
+      "name": "port14",
+      "id": 14,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port15",
+      "id": 15,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port16",
+      "id": 16,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port17",
+      "id": 17,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port18",
+      "id": 18,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port19",
+      "id": 19,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port20",
+      "id": 20,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port21",
+      "id": 21,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port22",
+      "id": 22,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port23",
+      "id": 23,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port24",
+      "id": 24,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port25",
+      "id": 25,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port26",
+      "id": 26,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port27",
+      "id": 27,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port28",
+      "id": 28,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port29",
+      "id": 29,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port30",
+      "id": 30,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port31",
+      "id": 31,
+      "available": true
+    },
+    {
+      "type": "PORT",
+      "name": "port32",
+      "id": 32,
+      "available": true
+    },
+    {
+      "type": "CLEAN",
+      "name": "CLEAN 1",
+      "id": 1001,
+      "available": true
+    },
+    {
+      "type": "CLEAN",
+      "name": "CLEAN 2",
+      "id": 1002,
+      "available": true
+    },
+    {
+      "type": "CLEAN",
+      "name": "CLEAN 3",
+      "id": 1003,
+      "available": true
+    },
+    {
+      "type": "CLEAN",
+      "name": "CLEAN 4",
+      "id": 1004,
+      "available": true
+    },
+    {
+      "type": "REFERENCE",
+      "name": "Reference",
+      "id": 2000
+    }
+  ]
+}
