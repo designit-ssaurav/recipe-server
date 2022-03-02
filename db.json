@@ -220,7 +220,7 @@
       "type": "PORT",
       "name": "4",
       "id": 4,
-      "bankId": 1,
+      "bankId": 2,
       "zeroPort": false,
       "isActive": true,
       "label": "Port 12",
