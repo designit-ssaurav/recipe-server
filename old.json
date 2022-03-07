@@ -1,86 +1,222 @@
 {
-  "recipes": [
+  "recipe": [
     {
-      "id": 1,
-      "recipe": {
-        "id": 1,
-        "name": "Recipe 001",
-        "duration": 100,
-        "createdBy": "Admin",
-        "version": 3,
-        "createdDate": "2022-02-23T14:28:57.296Z",
-        "steps": [
-          {
-            "inletLabel": "port-HCL",
-            "bankId": 1,
-            "inletId": 1,
-            "duration": 60
-          },
-          {
-            "inletLabel": "port-Ammonia",
-            "bankId": 2,
-            "inletId": 2,
-            "duration": 70
-          }
-        ]
-      },
-      "scheduledCount": 3,
-      "isRunning": true,
-      "startTime": "2022-02-23T14:28:57.296Z",
-      "percentageCompleted": 30,
-      "paused": true,
-      "pausedTime": "2022-02-23T14:28:57.296Z"
-    },
-    {
-      "id": 2,
-      "name": "Recipe002",
+      "name": "Recipe 001",
+      "duration": "10:11",
+      "createdBy": "Admin",
+      "currentVersion": "V003",
       "steps": [
         {
-          "inletLabel": "port-HCL",
-          "bankId": 1,
+          "id": "S1",
+          "inletName": "test-port-1",
           "inletId": 1,
-          "duration": 60
-        },
-        {
-          "inletLabel": "port-Ammonia",
-          "bankId": 2,
-          "inletId": 2,
-          "duration": 70
+          "duration": "00:30"
         }
       ],
-      "recipe": {
-        "id": 2,
-        "name": "Recipe002",
-        "duration": 100,
-        "version": 1,
-        "createdDate": "2022-03-07T10:49:53.902Z",
-        "steps": [
-          [
-            {
-              "inletLabel": "port-HCL",
-              "bankId": 1,
-              "inletId": 1,
-              "duration": 60,
-              "id": 1
-            }
-          ],
-          [
-            {
-              "inletLabel": "port-Ammonia",
-              "bankId": 2,
-              "inletId": 2,
-              "duration": 70,
-              "id": 2
-            }
-          ]
-        ]
-      },
-      "scheduledCount": 3,
-      "isRunning": true,
-      "startTime": "2022-03-07T10:49:53.903Z",
-      "percentageCompleted": 30,
-      "paused": false,
-      "pausedTime": "2022-03-07T10:49:53.903Z"
+      "createdAt": "2022-02-23T14:28:57.296Z",
+      "lastEditedOn": "2022-02-23T15:30:06.145Z",
+      "updatedOn": "2022-02-23T15:30:06.145Z",
+      "status": "Assigned to timeline",
+      "id": "971bec37-151d-4e6c-bf6f-626561e2c290"
+    },
+    {
+      "name": "Recipe 002",
+      "duration": "01:10",
+      "createdBy": "Admin",
+      "currentVersion": "V2",
+      "steps": [
+        {
+          "inletName": "test-port-1",
+          "inletId": 1,
+          "duration": "00:30",
+          "id": "0a6cdfd0-e829-44f8-9a5f-0a229be3c3b5"
+        },
+        {
+          "inletName": "port1",
+          "inletId": 2,
+          "duration": "00:40",
+          "id": "ace075f1-c2d1-495c-9884-966b3f5291a6"
+        }
+      ],
+      "createdAt": "2022-02-23T15:46:57.540Z",
+      "lastEditedOn": "2022-03-02T04:40:23.588Z",
+      "updatedOn": "2022-03-02T04:40:23.588Z",
+      "status": "Assigned to timeline",
+      "id": "378d51de-57dc-4774-b3a5-958aa53d46d3"
+    },
+    {
+      "name": "Recipe003",
+      "duration": "11:20",
+      "createBy": "Admin",
+      "currentVersion": "V1",
+      "steps": [
+        {
+          "inletName": "port10",
+          "inletId": 1,
+          "duration": "00:45",
+          "id": "3a6c73a7-fc19-416a-a47c-cc7622c30fb6"
+        },
+        {
+          "inletName": "port8",
+          "inletId": 2,
+          "duration": "00:55",
+          "id": "9ec2c6fb-e31b-4a4a-a2c4-a26facf37016"
+        }
+      ],
+      "createdOn": "2022-03-02T04:33:03.440Z",
+      "lastEditedOn": "2022-03-02T04:33:03.440Z",
+      "updatedOn": "2022-03-02T04:33:03.440Z",
+      "status": "Assigned to timeline",
+      "id": "9986ae3d-e658-489d-9bbc-500fca46baf3"
+    },
+    {
+      "name": "Recipe004",
+      "duration": "01:00",
+      "createBy": "Admin",
+      "currentVersion": "V1",
+      "steps": [
+        {
+          "inletName": "port10",
+          "inletId": 1,
+          "duration": "00:45",
+          "id": "a793bbea-541c-4664-9344-73463e4eb489"
+        },
+        {
+          "inletName": "port8",
+          "inletId": 2,
+          "duration": "00:15",
+          "id": "20750acf-ddc0-4307-9e42-b66afcd82385"
+        }
+      ],
+      "createdOn": "2022-03-02T05:05:19.706Z",
+      "lastEditedOn": "2022-03-02T05:05:19.706Z",
+      "updatedOn": "2022-03-02T05:05:19.706Z",
+      "status": "Assigned to timeline",
+      "id": "d97073ec-5558-42f9-8015-e11784b6041c"
+    },
+    {
+      "name": "Recipe005",
+      "duration": "11:10",
+      "createBy": "Operator",
+      "currentVersion": "V1",
+      "status": "Assigned to timeline",
+      "steps": [
+        {
+          "id": "cc0e130a-5a27-4c5b-bcb3-bef05bbb0fd8",
+          "inletName": "test-port",
+          "inletId": 1,
+          "duration": "00:30"
+        },
+        {
+          "id": "b676e0b1-e454-4210-a251-e0533d582577",
+          "inletName": "port2-xyz",
+          "inletId": 2,
+          "duration": "00:40"
+        },
+        {
+          "id": "1be7fca0-fc07-4781-9751-28dda8b7475f",
+          "inletName": "port",
+          "inletId": 20,
+          "duration": "00:40"
+        }
+      ],
+      "createdOn": "2022-03-03T09:39:03.752Z",
+      "lastEditedOn": "2022-03-03T09:39:03.752Z",
+      "updatedOn": "2022-03-03T09:39:03.752Z",
+      "id": "e4a8b4c8-a07f-4a65-b632-3689665c0f8b"
+    },
+    {
+      "name": "Recipe006",
+      "duration": "11:10",
+      "createBy": "Operator",
+      "currentVersion": "V1",
+      "status": "Running",
+      "steps": [
+        {
+          "id": "62017057-8df5-4dc3-9425-6f39b25800c1",
+          "inletName": "test-port",
+          "inletId": 1,
+          "duration": "00:30"
+        },
+        {
+          "id": "52f5de1e-4915-4ad3-8151-976ffba29f41",
+          "inletName": "port2-xyz",
+          "inletId": 2,
+          "duration": "00:40"
+        },
+        {
+          "id": "fe01f4c0-f4b6-4043-bcf2-e12dde179b2f",
+          "inletName": "port",
+          "inletId": 20,
+          "duration": "00:40"
+        }
+      ],
+      "createdOn": "2022-03-03T09:43:19.016Z",
+      "lastEditedOn": "2022-03-03T09:43:19.016Z",
+      "updatedOn": "2022-03-03T09:43:19.016Z",
+      "id": "94b93449-eeb1-46b3-a311-d11d5418ce0f"
+    },
+    {
+      "name": "Recipe006",
+      "duration": "12:10",
+      "createBy": "Admin",
+      "currentVersion": "V2",
+      "status": "Not Assigned",
+      "steps": [
+        {
+          "id": "8806000a-8f03-4a1e-bb1f-b15969e6a5bd",
+          "inletName": "test-port-1",
+          "inletId": 1,
+          "duration": "00:30"
+        },
+        {
+          "id": "803d4cd7-e331-4e4e-a242-e9a6df519cf1",
+          "inletName": "port2",
+          "inletId": 2,
+          "duration": "00:40"
+        },
+        {
+          "id": "5cb3c352-ba75-4a6a-9d0e-c81ee6347f3f",
+          "inletName": "port20",
+          "inletId": 20,
+          "duration": "00:40"
+        }
+      ],
+      "createdOn": "2022-03-03T09:45:15.814Z",
+      "lastEditedOn": "2022-03-03T09:45:15.814Z",
+      "updatedOn": "2022-03-03T09:45:15.814Z",
+      "id": "1ae9338d-6afd-4d7c-b1cd-db103719aa1f"
+    },
+    {
+      "name": "Recipe007",
+      "duration": "01:10",
+      "createBy": "Admin",
+      "currentVersion": "V2",
+      "status": "Not Assigned",
+      "steps": [
+        {
+          "id": "5352d8b8-ce39-423d-ae60-3673f1843f26",
+          "inletName": "test-port-1",
+          "inletId": 1,
+          "duration": "00:30"
+        },
+        {
+          "id": "8945b98d-e70a-47fd-b815-40412fe55bef",
+          "inletName": "port2",
+          "inletId": 2,
+          "duration": "00:40"
+        },
+        {
+          "id": "86a172cb-6ab8-4492-b74b-ed7556a1e12d",
+          "inletName": "port20",
+          "inletId": 20,
+          "duration": "00:40"
+        }
+      ],
+      "createdOn": "2022-03-03T09:46:23.530Z",
+      "lastEditedOn": "2022-03-03T09:46:23.530Z",
+      "updatedOn": "2022-03-03T09:46:23.530Z",
+      "id": "e7ad2578-14cc-48dc-9ffe-4912b164ae99"
     }
   ],
   "inlets": [
