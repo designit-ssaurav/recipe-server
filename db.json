@@ -33,54 +33,309 @@
     },
     {
       "id": 2,
-      "name": "Recipe002",
-      "steps": [
-        {
-          "inletLabel": "port-HCL",
-          "bankId": 1,
-          "inletId": 1,
-          "duration": 60
-        },
-        {
-          "inletLabel": "port-Ammonia",
-          "bankId": 2,
-          "inletId": 2,
-          "duration": 70
-        }
-      ],
       "recipe": {
         "id": 2,
         "name": "Recipe002",
         "duration": 100,
         "version": 1,
-        "createdDate": "2022-03-07T10:49:53.902Z",
+        "createdDate": "2022-03-08T08:04:25.637Z",
         "steps": [
-          [
-            {
-              "inletLabel": "port-HCL",
-              "bankId": 1,
-              "inletId": 1,
-              "duration": 60,
-              "id": 1
-            }
-          ],
-          [
-            {
-              "inletLabel": "port-Ammonia",
-              "bankId": 2,
-              "inletId": 2,
-              "duration": 70,
-              "id": 2
-            }
-          ]
+          {
+            "inletLabel": "port-HCL",
+            "bankId": 1,
+            "inletId": 1,
+            "duration": 60
+          },
+          {
+            "inletLabel": "port-Ammonia",
+            "bankId": 2,
+            "inletId": 2,
+            "duration": 70
+          }
         ]
       },
       "scheduledCount": 3,
-      "isRunning": true,
-      "startTime": "2022-03-07T10:49:53.903Z",
-      "percentageCompleted": 30,
+      "isRunning": false,
+      "startTime": null,
+      "percentageCompleted": 0,
       "paused": false,
-      "pausedTime": "2022-03-07T10:49:53.903Z"
+      "pausedTime": null
+    },
+    {
+      "recipe": {
+        "id": 2,
+        "name": "Recipe002",
+        "duration": 100,
+        "version": 2,
+        "createdDate": "2022-03-08T08:04:25.637Z",
+        "steps": [
+          {
+            "inletLabel": "port-HCL 2",
+            "bankId": 1,
+            "inletId": 1,
+            "duration": 60
+          },
+          {
+            "inletLabel": "port-Ammonia 2",
+            "bankId": 2,
+            "inletId": 2,
+            "duration": 70
+          }
+        ]
+      },
+      "scheduledCount": 3,
+      "isRunning": false,
+      "startTime": null,
+      "percentageCompleted": 0,
+      "paused": false,
+      "pausedTime": "2022-03-08T08:04:25.638Z",
+      "id": 3
+    },
+    {
+      "recipe": {
+        "id": 2,
+        "name": "Recipe002",
+        "duration": 100,
+        "version": 3,
+        "createdDate": "2022-03-08T08:04:25.637Z",
+        "steps": [
+          {
+            "inletLabel": "port-HCL 3",
+            "bankId": 1,
+            "inletId": 1,
+            "duration": 60
+          },
+          {
+            "inletLabel": "port-Ammonia 3",
+            "bankId": 2,
+            "inletId": 2,
+            "duration": 70
+          }
+        ]
+      },
+      "scheduledCount": 3,
+      "isRunning": false,
+      "startTime": null,
+      "percentageCompleted": 0,
+      "paused": false,
+      "pausedTime": null,
+      "id": 4
+    },
+    {
+      "recipe": {
+        "id": 2,
+        "name": "Recipe002",
+        "duration": 100,
+        "version": 4,
+        "createdDate": "2022-03-08T08:04:25.637Z",
+        "steps": [
+          {
+            "inletLabel": "port-HCL 4",
+            "bankId": 1,
+            "inletId": 1,
+            "duration": 60
+          },
+          {
+            "inletLabel": "port-Ammonia 4",
+            "bankId": 2,
+            "inletId": 2,
+            "duration": 70
+          }
+        ]
+      },
+      "scheduledCount": 3,
+      "isRunning": false,
+      "startTime": null,
+      "percentageCompleted": 0,
+      "paused": false,
+      "pausedTime": null,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "version": null,
+      "recipe": {
+        "id": 6,
+        "name": "Recipe005",
+        "duration": 100,
+        "version": 1,
+        "createdDate": "2022-03-08T11:14:40.126Z",
+        "steps": [
+          {
+            "inletLabel": "port-HCL 1",
+            "bankId": 1,
+            "inletId": 1,
+            "duration": 60
+          },
+          {
+            "inletLabel": "port-Ammonia 1",
+            "bankId": 2,
+            "inletId": 2,
+            "duration": 70
+          }
+        ]
+      },
+      "scheduledCount": 3,
+      "isRunning": false,
+      "startTime": null,
+      "percentageCompleted": 0,
+      "paused": false,
+      "pausedTime": "2022-03-08T11:14:40.126Z"
+    },
+    {
+      "id": 7,
+      "recipe": {
+        "id": 7,
+        "name": "Recipe 7",
+        "duration": 130,
+        "version": 1,
+        "createdBy": "Admin",
+        "createdDate": "2022-03-08T11:48:01.597Z",
+        "steps": [
+          {
+            "inletLabel": "port-HCL 1",
+            "bankId": 1,
+            "inletId": 1,
+            "duration": 60
+          },
+          {
+            "inletLabel": "port-Ammonia 1",
+            "bankId": 2,
+            "inletId": 2,
+            "duration": 70
+          }
+        ]
+      },
+      "scheduledCount": 3,
+      "isRunning": false,
+      "startTime": null,
+      "percentageCompleted": 0,
+      "paused": false,
+      "pausedTime": "2022-03-08T11:48:01.597Z"
+    },
+    {
+      "recipe": {
+        "id": 7,
+        "name": "Recipe 7",
+        "duration": 130,
+        "version": 2,
+        "createdBy": "Admin",
+        "createdDate": "2022-03-08T11:48:47.095Z",
+        "steps": [
+          {
+            "inletLabel": "port-HCL 2",
+            "bankId": 1,
+            "inletId": 1,
+            "duration": 60
+          },
+          {
+            "inletLabel": "port-Ammonia 2",
+            "bankId": 2,
+            "inletId": 2,
+            "duration": 70
+          }
+        ]
+      },
+      "scheduledCount": 3,
+      "isRunning": false,
+      "startTime": null,
+      "percentageCompleted": 0,
+      "paused": false,
+      "pausedTime": "2022-03-08T11:48:01.597Z",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "recipe": {
+        "id": 9,
+        "name": "Recipe 9",
+        "duration": 130,
+        "version": 1,
+        "createdBy": "Admin",
+        "createdDate": "2022-03-08T11:50:04.894Z",
+        "steps": [
+          {
+            "inletLabel": "port-HCL 1",
+            "bankId": 1,
+            "inletId": 1,
+            "duration": 60
+          },
+          {
+            "inletLabel": "port-Ammonia 1",
+            "bankId": 2,
+            "inletId": 2,
+            "duration": 70
+          }
+        ]
+      },
+      "scheduledCount": 3,
+      "isRunning": false,
+      "startTime": null,
+      "percentageCompleted": 0,
+      "paused": false,
+      "pausedTime": "2022-03-08T11:50:04.894Z"
+    },
+    {
+      "recipe": {
+        "id": 9,
+        "name": "Recipe 9",
+        "duration": 130,
+        "version": 2,
+        "createdBy": "Admin",
+        "createdDate": "2022-03-08T11:51:46.169Z",
+        "steps": [
+          {
+            "inletLabel": "port-HCL 2",
+            "bankId": 1,
+            "inletId": 1,
+            "duration": 60
+          },
+          {
+            "inletLabel": "port-Ammonia 2",
+            "bankId": 2,
+            "inletId": 2,
+            "duration": 70
+          }
+        ]
+      },
+      "scheduledCount": 3,
+      "isRunning": false,
+      "startTime": null,
+      "percentageCompleted": 0,
+      "paused": false,
+      "pausedTime": "2022-03-08T11:50:04.894Z",
+      "id": 10
+    },
+    {
+      "recipe": {
+        "id": 9,
+        "name": "Recipe 9",
+        "duration": 170,
+        "version": 3,
+        "createdBy": "Admin",
+        "createdDate": "2022-03-08T11:52:18.667Z",
+        "steps": [
+          {
+            "inletLabel": "port-HCL 3",
+            "bankId": 1,
+            "inletId": 1,
+            "duration": 100
+          },
+          {
+            "inletLabel": "port-Ammonia 3",
+            "bankId": 2,
+            "inletId": 2,
+            "duration": 70
+          }
+        ]
+      },
+      "scheduledCount": 3,
+      "isRunning": false,
+      "startTime": null,
+      "percentageCompleted": 0,
+      "paused": false,
+      "pausedTime": "2022-03-08T11:50:04.894Z",
+      "id": 11
     }
   ],
   "inlets": [
@@ -166,7 +421,7 @@
     },
     {
       "type": "CLEAN",
-      "name": "Clean 1",
+      "name": "Clean 1-8",
       "id": -1,
       "bankId": 1,
       "zeroPort": false,
@@ -208,7 +463,7 @@
       "type": "PORT",
       "name": "4",
       "id": 4,
-      "bankId": 2,
+      "bankId": 1,
       "zeroPort": false,
       "isActive": true,
       "label": "Port 12",
@@ -256,7 +511,7 @@
     },
     {
       "type": "CLEAN",
-      "name": "Clean 2",
+      "name": "Clean 9-16",
       "id": -1,
       "bankId": 2,
       "zeroPort": false,
@@ -346,7 +601,7 @@
     },
     {
       "type": "CLEAN",
-      "name": "Clean 3",
+      "name": "Clean 17-24",
       "id": -1,
       "bankId": 3,
       "zeroPort": false,
@@ -436,7 +691,7 @@
     },
     {
       "type": "CLEAN",
-      "name": "Clean 4",
+      "name": "Clean 25-32",
       "id": -1,
       "bankId": 4,
       "zeroPort": false,
@@ -448,20 +703,10 @@
       "type": "REFERENCE",
       "name": "Reference",
       "id": -2,
-      "bankId": 4,
-      "zeroPort": false,
-      "isActive": true,
-      "label": "Reference",
-      "available": true
-    },
-    {
-      "type": "STANDBY",
-      "name": "StandBy",
-      "id": 0,
       "bankId": 0,
       "zeroPort": false,
       "isActive": true,
-      "label": "Stand By",
+      "label": "Reference",
       "available": true
     }
   ]

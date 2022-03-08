@@ -2,7 +2,6 @@ const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 
-const { v4: uuidv4 } = require("uuid");
 const fs = require("fs");
 const path = require("path");
 
@@ -11,18 +10,22 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 server.use(jsonServer.rewriter({ "/recipes/status": "/recipes" }));
 
-// To handle POST, PUT and PATCH you need to use a body-parser
-// You can use the one used by JSON Server
 server.use(jsonServer.bodyParser);
 
 server.use((req, res, next) => {
-  console.log(req.path);
+  //console.log(req.path);
   const jsonData = JSON.parse(
     fs.readFileSync(path.join(__dirname, "db.json"), {
       encoding: "utf-8",
     })
   );
   const recipeLength = jsonData.recipes.length;
+
+  const getDuration = (steps) => {
+    return steps.reduce((prev, curr) => {
+      return prev + curr.duration;
+    }, 0);
+  };
 
   if (req.method === "POST") {
     try {
@@ -31,38 +34,67 @@ server.use((req, res, next) => {
         const newId = recipeLength + 1;
         newRecipe.id = newId;
         newRecipe.name = req.body.name ? req.body.name : "Recipe " + newId;
-        newRecipe.duration = req.body.duration ? req.body.duration : 100;
+        newRecipe.duration = getDuration(req.body.steps);
         newRecipe.version = 1;
+
+        newRecipe.createdBy = req.body.createdBy ? req.body.createdBy : "Admin";
         newRecipe.createdDate = new Date().toISOString();
-        newRecipe.steps = req.body.steps
-          ? req.body.steps.map((step, ind) => [{ ...step, id: ind + 1 }])
-          : [];
-        console.log("NEW RECIPE ", newRecipe);
+        newRecipe.steps = req.body.steps ? req.body.steps : [];
+
         req.body.recipe = newRecipe;
         req.body.scheduledCount = req.body.scheduledCount
           ? req.body.scheduledCount
           : 3;
-        req.body.isRunning = req.body.isRunning ? req.body.isRunning : true;
-        req.body.startTime = req.body.startTime
-          ? req.body.startTime
-          : new Date().toISOString();
+        req.body.isRunning = req.body.isRunning ? req.body.isRunning : false;
+        req.body.startTime = req.body.startTime ? req.body.startTime : null;
         req.body.percentageCompleted = req.body.percentageCompleted
           ? req.body.percentageCompleted
-          : 30;
+          : 0;
         req.body.paused = req.body.paused ? req.body.paused : false;
         req.body.pausedTime = req.body.pausedTime
           ? req.body.pausedTime
           : new Date().toISOString();
+        if (req.body.name || req.body.name === null) {
+          delete req.body.name;
+        }
+        if (req.body.steps || req.body.steps === null) {
+          delete req.body.steps;
+        }
+        if (req.body.duration || req.body.duration === null) {
+          delete req.body.duration;
+        }
+        if (req.body.version || req.body.version === null) {
+          delete req.body.version;
+        }
+        if (req.body.createdDate || req.body.createdDate === null) {
+          delete req.body.createdDate;
+        }
+        if (req.body.createdBy || req.body.createdBy === null) {
+          delete req.body.createdBy;
+        }
       } else {
         const recipeId = +req.body.id;
-        const filteredRecipe = jsonData.recipe.find(
+        const filteredRecipe = jsonData.recipes.find(
           (r) => r.recipe.id === recipeId
         );
+        const allRecipesWithId = jsonData.recipes.filter(
+          (r) => r.recipe.id === recipeId
+        );
+        const latestVersion =
+          allRecipesWithId[allRecipesWithId.length - 1].recipe.version;
+        delete req.body.id;
         filteredRecipe.recipe = {
           ...filteredRecipe.recipe,
-          ...req.body,
-          version: filteredRecipe.recipe.version + 1,
+          duration: req.body.steps
+            ? getDuration(req.body.steps)
+            : filteredRecipe.recipe.duration,
+          steps: req.body.steps ? req.body.steps : filteredRecipe.recipe.steps,
+          createdDate: new Date().toISOString(),
+          version: latestVersion + 1,
         };
+        for (let key in req.body) {
+          delete req.body[key];
+        }
         req.body.recipe = filteredRecipe.recipe;
         req.body.scheduledCount = filteredRecipe.scheduledCount;
         req.body.isRunning = filteredRecipe.isRunning;
@@ -75,18 +107,12 @@ server.use((req, res, next) => {
       console.log(error);
     }
   }
-
-  if (req.method === "PUT" || req.method === "PATCH") {
-    //req.body.lastEditedOn = new Date().toISOString();
-    //req.body.updatedOn = new Date().toISOString();
-  }
   next();
 });
 
 router.render = (req, res) => {
   const response = {};
   response.result = res.locals.data;
-  console.log("Request Path :- ", req.path);
   if (req.path.indexOf("status") != -1) {
     response.offset = 0;
     response.limit = 10;
