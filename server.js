@@ -8,7 +8,13 @@ const path = require("path");
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
-server.use(jsonServer.rewriter({ "/recipes/status": "/recipes" }));
+server.use(
+  jsonServer.rewriter({
+    "/recipes/status": "/recipes",
+    "/recipes/:name/:version":
+      "/recipes?recipe.name=:name&recipe.version=:version",
+  })
+);
 
 server.use(jsonServer.bodyParser);
 
@@ -113,11 +119,11 @@ server.use((req, res, next) => {
 router.render = (req, res) => {
   const response = {};
   response.result = res.locals.data;
-  if (req.path.indexOf("status") != -1) {
-    response.offset = 0;
-    response.limit = 10;
-    response.count = 1000;
-  }
+  // if (req.path.indexOf("status") != -1) {
+  //   response.offset = 0;
+  //   response.limit = 10;
+  //   response.count = 1000;
+  // }
   res.jsonp(response);
 };
 
