@@ -19,7 +19,6 @@ server.use(
 server.use(jsonServer.bodyParser);
 
 server.use((req, res, next) => {
-  //console.log(req.path);
   const jsonData = JSON.parse(
     fs.readFileSync(path.join(__dirname, "db.json"), {
       encoding: "utf-8",
@@ -113,17 +112,28 @@ server.use((req, res, next) => {
       console.log(error);
     }
   }
+
+  if (req.method === "DELETE") {
+    if (req.query["recipe.name"] && req.query["recipe.version"]) {
+      const recipeName = req.query["recipe.name"];
+      const recipeVersion = req.query["recipe.version"];
+
+      const recipeToDelete = jsonData.recipes.find(
+        (rec) =>
+          rec.recipe.name === recipeName &&
+          rec.recipe.version === +recipeVersion
+      );
+      req.params.id = recipeToDelete.id;
+      req.url = `/recipes/${recipeToDelete.id}`;
+    }
+  }
   next();
 });
 
 router.render = (req, res) => {
   const response = {};
   response.result = res.locals.data;
-  // if (req.path.indexOf("status") != -1) {
-  //   response.offset = 0;
-  //   response.limit = 10;
-  //   response.count = 1000;
-  // }
+
   res.jsonp(response);
 };
 

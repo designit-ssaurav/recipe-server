@@ -67,68 +67,6 @@
         "id": 2,
         "name": "Recipe002",
         "duration": 100,
-        "version": 2,
-        "createdBy": "Admin",
-        "createdDate": "2022-03-08T08:04:25.637Z",
-        "steps": [
-          {
-            "inletLabel": "port-HCL 2",
-            "bankId": 1,
-            "inletId": 1,
-            "duration": 60
-          },
-          {
-            "inletLabel": "port-Ammonia 2",
-            "bankId": 2,
-            "inletId": 2,
-            "duration": 70
-          }
-        ]
-      },
-      "scheduledCount": 3,
-      "isRunning": false,
-      "startTime": null,
-      "percentageCompleted": 0,
-      "paused": false,
-      "pausedTime": "2022-03-08T08:04:25.638Z",
-      "id": 3
-    },
-    {
-      "recipe": {
-        "id": 2,
-        "name": "Recipe002",
-        "duration": 100,
-        "createdBy": "Admin",
-        "version": 3,
-        "createdDate": "2022-03-08T08:04:25.637Z",
-        "steps": [
-          {
-            "inletLabel": "port-HCL 3",
-            "bankId": 1,
-            "inletId": 1,
-            "duration": 60
-          },
-          {
-            "inletLabel": "port-Ammonia 3",
-            "bankId": 2,
-            "inletId": 2,
-            "duration": 70
-          }
-        ]
-      },
-      "scheduledCount": 3,
-      "isRunning": false,
-      "startTime": null,
-      "percentageCompleted": 0,
-      "paused": false,
-      "pausedTime": null,
-      "id": 4
-    },
-    {
-      "recipe": {
-        "id": 2,
-        "name": "Recipe002",
-        "duration": 100,
         "createdBy": "Admin",
         "version": 4,
         "createdDate": "2022-03-08T08:04:25.637Z",
