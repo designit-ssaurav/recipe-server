@@ -133,6 +133,15 @@ server.use((req, res, next) => {
 router.render = (req, res) => {
   const response = {};
   response.result = res.locals.data;
+  if (
+    req.method === "GET" &&
+    req.query["recipe.name"] &&
+    req.query["recipe.version"]
+  ) {
+    if (res.locals.data && res.locals.data.length > 0) {
+      response.result = { ...res.locals.data[0].recipe };
+    }
+  }
 
   res.jsonp(response);
 };
